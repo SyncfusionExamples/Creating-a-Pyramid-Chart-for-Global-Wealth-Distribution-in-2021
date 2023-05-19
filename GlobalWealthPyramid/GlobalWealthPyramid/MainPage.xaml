@@ -10,42 +10,10 @@
         <model:GlobalWealthPercentage x:Name="viewModel"/>
     </ContentPage.BindingContext>
 
-    <Frame BorderColor="LightGray" CornerRadius="10" HasShadow="True" Padding="10"  Margin="48,47,49,47" MaximumWidthRequest="{OnPlatform Android=450,iOS=450,Default=800}">
-        <Grid>
-          
-            <!--<Grid HorizontalOptions="Start" Margin="0,0,0,10" Grid.Row="0" >
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="13"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                <StackLayout Orientation="Vertical" Margin="0,8,0,0" Grid.RowSpan="2" BackgroundColor="#95DB9C"/>
-                <StackLayout Margin="5,0,0,0" HorizontalOptions="Start"  Orientation="Vertical" Grid.Column="1" >
-                        <Label  Text="The Global Wealth Pyramid"  FontSize="Large" FontAttributes="Bold" TextColor="Black"/>
-                        <Label Text="An overview of global wealth distribution in 2021" FontSize="18" TextColor="Gray"/>
-                    </StackLayout>
-                </Grid>-->
-
-            <chart:SfPyramidChart ItemsSource="{Binding GlobalWealthData}"  XBindingPath="AdultsCount" YBindingPath="WealthPercentage"
+    <Border BackgroundColor="White" Stroke="#BEB1AE" Padding="10"   StrokeShape="RoundRectangle 10" Margin="48,47,49,47" WidthRequest="{OnPlatform iOS=550,Android=550,MacCatalyst=1200,WinUI=800}">        <chart:SfPyramidChart ItemsSource="{Binding GlobalWealthData}"  XBindingPath="AdultsCount" YBindingPath="WealthPercentage"
                            EnableTooltip="True" PaletteBrushes="{Binding PaletteBrushes}">
 
                 <chart:SfPyramidChart.TooltipTemplate>
-                    <!--<DataTemplate>
-                        <Grid HorizontalOptions="Start" Margin="0,0,0,2" Grid.Row="0">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="13"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-                                <StackLayout Orientation="Vertical" Margin="0,0,0,0" Grid.RowSpan="2" BackgroundColor="{Binding Item.Color}" HeightRequest="28" 
-                                             WidthRequest="{OnPlatform Android=5,iOS=5,Default=7}"/>
-                            <StackLayout Margin="3,0,0,0" HorizontalOptions="Start"  Orientation="Vertical" Grid.Column="1" >
-                                    <Label Text="{Binding Item.AdultsCount,StringFormat='{0}M'}"
-                           FontSize="{OnPlatform Android=11,iOS=11,Default=14}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" />
-                                    <Label Text="{Binding Item.WealthPercentage, StringFormat='({0}%)'}" Margin="0,2,0,0"
-                           FontSize="{OnPlatform Android=9,iOS=9,Default=12}"  TextColor="White" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" />
-                                </StackLayout>
-                            </Grid>
-                    </DataTemplate>-->
-
 
                     <DataTemplate>
                         <Grid ColumnDefinitions="*" RowDefinitions="Auto,Auto,Auto">
@@ -61,7 +29,7 @@
                 </chart:SfPyramidChart.TooltipTemplate>
 
                 <chart:SfPyramidChart.Resources>
-                        <converter:BrushToColorConverter x:Key="brushToColor" />
+                    <converter:BrushToColorConverter x:Key="brushToColor" />
                 </chart:SfPyramidChart.Resources>
 
                 <chart:SfPyramidChart.Title>
@@ -70,8 +38,8 @@
                             <ColumnDefinition Width="13"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-                        <StackLayout  Grid.RowSpan="2" Margin="5,10,0,5" Orientation="Vertical"
-                     WidthRequest="12" BackgroundColor="#95DB9C" />
+                        <StackLayout  Grid.RowSpan="2"  Margin="0,8,0,6" Orientation="Vertical"
+                     BackgroundColor="#95DB9C" />
                         <StackLayout Grid.Column="1" Margin="5,0,0,0" HorizontalOptions="Start" 
                                 Orientation="Vertical" >
                             <Label  Text="The Global Wealth Pyramid" FontSize="Large" FontAttributes="Bold" 
@@ -100,15 +68,16 @@
 
                 <chart:SfPyramidChart.PlotAreaBackgroundView>
                     <AbsoluteLayout>
-                        <Label Text="Number of adults (% of world adults)" FontSize="Subtitle"  FontAttributes="Bold"  AbsoluteLayout.LayoutBounds="0.5,1,-1,-1"
+                        <Label Text="Number of adults (% of world adults)" FontSize="{OnPlatform iOS=13,Android=13,Default=Subtitle}"  FontAttributes="Bold"  AbsoluteLayout.LayoutBounds="0.5,1,-1,-1"
 			         AbsoluteLayout.LayoutFlags="PositionProportional"/>
                     </AbsoluteLayout>
                 </chart:SfPyramidChart.PlotAreaBackgroundView>
 
             </chart:SfPyramidChart>
 
-        </Grid>
-    </Frame>
+
+        </Border>
+  
 </ContentPage>
 
 

@@ -70,7 +70,7 @@
 
                 <chart:SfPyramidChart.PlotAreaBackgroundView>
                     <AbsoluteLayout>
-                        <Label Text="Number of adults (% of world adults)" FontSize="{OnPlatform iOS=13,Android=13,Default=Subtitle}"  FontAttributes="Bold"  AbsoluteLayout.LayoutBounds="0.5,1,-1,-1"
+                    <Label Text="% of world’s adults" FontSize="{OnPlatform iOS=13,Android=13,Default=Small}"  FontAttributes="Bold"  AbsoluteLayout.LayoutBounds="0.5,1,-1,-1"
 			         AbsoluteLayout.LayoutFlags="PositionProportional"/>
                     </AbsoluteLayout>
                 </chart:SfPyramidChart.PlotAreaBackgroundView>

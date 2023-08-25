@@ -1,10 +1,10 @@
 A pyramid chart provides a proportional visualization of a total in hierarchies. It is a single series chart without an axis. The data is shown as percentages of a total, where the sum of the parts makes up the whole.
 
-<b> Mode </b>
+<b> Mode : </b>
 
 The [SfPyramidChart](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.SfPyramidChart.html) allows you to render a chart in a linear or surface mode by using the [Mode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.SfPyramidChart.html#Syncfusion_Maui_Charts_SfPyramidChart_Mode) property. In the Linear mode, the height of the pyramid segment is based on the y-value. In the Surface mode, the area of the pyramid segment is based on the y-value. By default, the Mode property is set to linear.
 
-<b>GapRatio</b>
+<b>GapRatio : </b>
 
 The [GapRatio](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.SfPyramidChart.html#Syncfusion_Maui_Charts_SfPyramidChart_GapRatio) property is used to change the space between two segments. The default value of the GapRatio property is 0, and its value ranges from 0 to 1.
 

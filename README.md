@@ -1,3 +1,5 @@
+
+# Creating a Pyramid Chart for Global Wealth Distribution in 2021
 A pyramid chart provides a proportional visualization of a total in hierarchies. It is a single series chart without an axis. The data is shown as percentages of a total, where the sum of the parts makes up the whole.
 
 <b> Mode : </b>

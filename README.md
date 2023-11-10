@@ -1,10 +1,6 @@
 
 # Creating a Pyramid Chart for Global Wealth Distribution in 2021
 
-## Troubleshooting
-#### Path too long exception
-If you are facing a path too long exception when building this example project, close Visual Studio and rename the repository to short and build the project.
-
 ## Description 
 A pyramid chart provides a proportional visualization of a total in hierarchies. It is a single series chart without an axis. The data is shown as percentages of a total, where the sum of the parts makes up the whole.
 
@@ -19,5 +15,9 @@ The [GapRatio](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.SfPyra
 This sample shows how to visualize a comparison of global wealth distribution in 2021 using a .NET MAUI Pyramid Chart. This comparison will help us understand how wealth is distributed among the population and the existing inequalities.
 
 ![Demo](https://github.com/SyncfusionExamples/Creating-a-Pyramid-Chart-for-Global-Wealth-Distribution-in-2021/assets/103025761/40e59934-b6b3-4f3e-80ca-b4b31cc765ae)
+
+## Troubleshooting
+#### Path too long exception
+If you are facing a path too long exception when building this example project, close Visual Studio and rename the repository to short and build the project.
 
 For a step by step procedure, refer to the [Global Wealth Pyramid blog](https://www.syncfusion.com/blogs/post/dotnet-maui-pyramid-chart-visualize-global-wealth-distribution.aspx).
